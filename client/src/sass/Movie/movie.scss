@@ -1,0 +1,9 @@
+@import 'movie-card';
+@import 'moviedetail';
+.movie-container{
+    margin: 2px auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,33 @@
+.modal-content{
+    background-color: #1a1a1a !important;
+    color: silver !important;
+
+    .close{
+        color: silver;
+
+        &:hover{
+            color: silver;
+        }
+    }
+
+    %input{
+        border: none;
+        color:whitesmoke;
+        border-radius: 5px;
+        &:focus{
+            box-shadow: 1px 2px 2px 1px lighten($color: $primary, $amount: 20%);
+            color: whitesmoke;
+            background-color: lighten($color: $primary, $amount: 10%);    
+        }
+    }
+    input[type="text"], input[type="number"]{
+        @extend %input;
+        background-color: lighten($color: $primary, $amount: 10%);
+    }
+
+    textarea{
+        @extend %input;
+        background-color: lighten($color: $primary, $amount: 10%);
+    }
+
+}

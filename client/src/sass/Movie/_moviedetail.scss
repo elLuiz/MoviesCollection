@@ -1,0 +1,84 @@
+$dangerous: #ff7f63;
+$blue: #84C9FB;
+
+%btn{
+    border: none;
+    border-radius: 5px;
+
+    padding: 5px;
+
+    &:hover{
+        transform: scale(0.98);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.detail-container{
+    nav{
+        height: 40px;
+        border-bottom: 1px solid silver;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: silver;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+    }    
+
+    .movie-detail{
+        display: flex;
+        padding: 20px;
+        .movie-poster{
+            width: fit-content;
+            height: fit-content;
+            img{
+                width: 350px;
+                height: 550px;
+            }
+        }
+
+        .movie-info{
+            margin-left: 5%;
+            width: 30%;
+            color: silver;
+            display: flex;
+            flex-direction: column;
+            .title{
+                font-size: 25px;
+                margin: 0 !important;
+            }
+
+            .description{
+                word-wrap: break-word;
+            }
+            .rating{
+                .checked{
+                    color: #f6cc81;
+                }
+            }
+
+            .delete-movie{
+                display: flex;
+                flex-grow: 1;
+                align-items: flex-end;
+                justify-content: flex-start;
+
+                .delete{
+                    @extend %btn;
+                    background-color: $dangerous;
+                    color: whitesmoke;
+                    box-shadow: 1px 1px 2px 2px $dangerous;
+
+                }
+            }
+        }
+    }
+}

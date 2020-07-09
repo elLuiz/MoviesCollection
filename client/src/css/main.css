@@ -1,0 +1,206 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+  background: #404040;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1a1a1a !important;
+}
+
+body {
+  overflow-y: auto !important;
+}
+
+.insert-movie button, .main-nav .search-bar form button {
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px !important;
+  line-height: 0 !important;
+}
+.insert-movie button:focus, .main-nav .search-bar form button:focus {
+  outline: none;
+}
+
+.main-nav {
+  height: 70px;
+  border-bottom: 1px solid silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+}
+.main-nav .slogan-div {
+  cursor: pointer;
+  padding-left: 5px;
+  display: flex;
+  font-size: 1em !important;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.main-nav .slogan-div h1 {
+  color: #8a120a;
+  margin: 0;
+  line-height: 0;
+  font-size: 1.5em !important;
+}
+.main-nav .slogan-div i {
+  color: silver;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.main-nav .search-bar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  height: 55px;
+}
+.main-nav .search-bar form {
+  width: 100%;
+  height: 30px;
+}
+.main-nav .search-bar form input[type=text] {
+  background-color: #272727;
+  color: silver;
+  width: 60%;
+  border: none;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+.main-nav .search-bar form input[type=text]:focus {
+  outline: 1px slategrey;
+}
+.main-nav .search-bar form button {
+  width: 10%;
+  background-color: #272727;
+  color: silver;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.main-nav .search-bar form .input {
+  position: relative;
+  display: flex;
+}
+.main-nav .search-bar form .related-movies {
+  position: absolute;
+  top: auto;
+  max-height: 400px;
+  z-index: 1;
+  background-color: #1a1a1a;
+  box-shadow: 1px -1px 3px 0px #272727;
+  width: 30%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.main-nav .search-bar form .related-movies .searched-movie {
+  display: flex;
+  color: silver;
+  align-items: center;
+  word-wrap: break-word;
+}
+.main-nav .search-bar form .related-movies .searched-movie a {
+  cursor: pointer;
+  margin: 0;
+}
+.main-nav .search-bar form .related-movies .searched-movie a:hover {
+  text-decoration: none;
+  color: #84C9FB;
+}
+.main-nav .search-bar form .related-movies .searched-movie img {
+  width: 60px;
+  height: 80px;
+  margin-right: 1rem;
+}
+.main-nav .search-bar form .related-movies .searched-movie:hover {
+  background: #4d4d4d;
+  cursor: pointer;
+}
+.main-nav .search-bar form .related-movies .searched-movie i {
+  color: #CF6679;
+  margin-right: 1rem;
+}
+.main-nav .search-bar form .related-movies .searched-movie .not-found {
+  margin: 0;
+}
+
+.insert-movie {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  padding: 5px;
+}
+.insert-movie button {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #84C9FB;
+  color: silver;
+}
+.insert-movie button:hover {
+  transform: scale(0.98);
+}
+
+.modal-content {
+  background-color: #1a1a1a !important;
+  color: silver !important;
+}
+.modal-content .close {
+  color: silver;
+}
+.modal-content .close:hover {
+  color: silver;
+}
+.modal-content textarea, .modal-content input[type=text], .modal-content input[type=number] {
+  border: none;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.modal-content textarea:focus, .modal-content input[type=text]:focus, .modal-content input[type=number]:focus {
+  box-shadow: 1px 2px 2px 1px #4d4d4d;
+  color: whitesmoke;
+  background-color: #343434;
+}
+.modal-content input[type=text], .modal-content input[type=number] {
+  background-color: #343434;
+}
+.modal-content textarea {
+  background-color: #343434;
+}
+
+#root {
+  height: 100%;
+}
+#root .App {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

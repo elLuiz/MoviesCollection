@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+.movie-card {
+  height: 325px;
+  width: 200px;
+  background-color: #1f1f1f;
+  box-shadow: 1px 1px 2px 2px #343434;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.movie-card:hover {
+  transform: scale(0.98);
+}
+.movie-card .movie-image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 258px;
+}
+.movie-card .movie-information {
+  padding: 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.movie-card .movie-information a {
+  color: #84C9FB;
+}
+.movie-card .movie-information a:hover {
+  text-decoration: none;
+  color: #6bbefa;
+}
+.movie-card .movie-information .title {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+.movie-card .movie-information .checked {
+  color: #f6cc81;
+}
+
+.detail-container .movie-detail .movie-info .delete-movie .delete {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.detail-container .movie-detail .movie-info .delete-movie .delete:hover {
+  transform: scale(0.98);
+}
+.detail-container .movie-detail .movie-info .delete-movie .delete:focus {
+  outline: none;
+}
+
+.detail-container nav {
+  height: 40px;
+  border-bottom: 1px solid silver;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.detail-container nav a {
+  text-decoration: none;
+  color: silver;
+}
+.detail-container nav a:hover {
+  color: #84C9FB;
+}
+.detail-container .movie-detail {
+  display: flex;
+  padding: 20px;
+}
+.detail-container .movie-detail .movie-poster {
+  width: fit-content;
+  height: fit-content;
+}
+.detail-container .movie-detail .movie-poster img {
+  width: 350px;
+  height: 550px;
+}
+.detail-container .movie-detail .movie-info {
+  margin-left: 5%;
+  width: 30%;
+  color: silver;
+  display: flex;
+  flex-direction: column;
+}
+.detail-container .movie-detail .movie-info .title {
+  font-size: 25px;
+  margin: 0 !important;
+}
+.detail-container .movie-detail .movie-info .description {
+  word-wrap: break-word;
+}
+.detail-container .movie-detail .movie-info .rating .checked {
+  color: #f6cc81;
+}
+.detail-container .movie-detail .movie-info .delete-movie {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.detail-container .movie-detail .movie-info .delete-movie .delete {
+  background-color: #ff7f63;
+  color: whitesmoke;
+  box-shadow: 1px 1px 2px 2px #ff7f63;
+}
+
+.movie-container {
+  margin: 2px auto;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=movie.css.map */

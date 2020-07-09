@@ -1,0 +1,10 @@
+@import 'config';
+@import 'nav';
+@import 'modal';
+#root{
+    height: 100%;
+    .App{
+        height: 100%;
+        width: 100%;
+    }
+}
