@@ -28,3 +28,6 @@ All dependencies for the server are available in package.json file, and for the 
 ![Information](./Images/capture3.png)
 ![Search](./Images/capture4.png)
 
+## Important
+
+If you want to add images, you have to place them in the img folder located in client/public/img. 
