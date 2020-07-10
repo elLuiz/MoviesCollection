@@ -17,7 +17,8 @@ All dependencies for the server are available in package.json file, and for the 
 2. Create a file, in the root, named .env (this may disappear in your directory; i recommend you to use VsCode or another text editor). In that file put the informations about your database.
     1. Go to your cluster, and click connect;
     2. Click **Connect your application** ;
-    3. Select NodeJs 3.6 or later, and copy the url provided.
+    3. Select NodeJs 3.6 or later, and copy the url provided;
+    4. Assign the url to this variable DB_CONNECTION.
 
 3. Now, run this command in terminal: npm run dev. This command will execute server and client at the same time.
 
